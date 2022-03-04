@@ -3,7 +3,7 @@ const schema = mongoose.Schema;
 
 const AnimalsSchema = new schema({
     animalName: {type: String , required:true},
-    animalBirthDate: {type: Date , required:true, default: 01-01-2000},
+    animalBirthDate: {type: Date , required:false, default: 01-01-2000},
     animalCageNumber: {type: Number , required:true},
     animalSex: {type: String , required:true},
     animalType: {type: String , required:true},
@@ -12,4 +12,4 @@ const AnimalsSchema = new schema({
 { timestamps: true }
 )
 
-module.exports = mongoose.model('animal' , AnimalsSchema)
+module.exports = mongoose.model('animals' , AnimalsSchema);

@@ -1,0 +1,10 @@
+POST http://localhost:8000/animals/
+Content-Type: application/json
+
+
+{
+    "animalName":"animal2",
+    "animalCageNumber":950,
+    "animalSex": "lala",
+    "animalType": "dad"
+}
