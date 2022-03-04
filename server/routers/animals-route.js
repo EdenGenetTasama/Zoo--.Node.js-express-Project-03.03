@@ -1,10 +1,10 @@
 
 const express = require('express');
 const router = express.Router();
+const animalControllers = require('../controllers/animals-cntrl');
 
-router.get('/' , (req,res)=>{
-    res.send("get")
-})
+router.get('/' , animalControllers.getAllAnimals);
 
+router.post('/' , animalControllers.postAnimals)
 
 module.exports= router;
